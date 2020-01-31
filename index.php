@@ -1,15 +1,9 @@
 <?php
-include 'function.php';
-$result = recuperaStanze();
+include 'function.php'; //includo il file delle funzioni
+$result = recuperaStanze(); //richiamo la funzione che mi recupera le stanze
+include 'layout/header.php'; //includo il file dell'header
 ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  </head>
-  <body>
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
