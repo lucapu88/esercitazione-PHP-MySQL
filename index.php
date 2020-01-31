@@ -14,6 +14,7 @@ include 'layout/header.php'; //includo il file dell'header
                 <th scope="col">ID</th>
                 <th scope="col">Numero stanza</th>
                 <th scope="col">Piano</th>
+                <th scope="col">Azioni</th>
               </tr>
             </thead>
             <tbody>
@@ -25,6 +26,11 @@ include 'layout/header.php'; //includo il file dell'header
                           <td><?php echo $row['id'] ?></td>
                           <td><?php echo $row['room_number'] ?></td>
                           <td><?php echo $row['floor'] ?></td>
+                          <td>
+                            <a class="btn btn-info" href="dettagli_stanza.php?idStanza=<?php echo $row['id'] ?>"> <!-- al click vado a richiamare il file dei dettagli della singola stanza passandogli 'id come parametro in get -->
+                              Dettagli
+                            </a>
+                          </td>
                         </tr>
                         <?php
               	    }
