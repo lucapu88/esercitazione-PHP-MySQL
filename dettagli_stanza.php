@@ -1,7 +1,7 @@
 <?php
 include 'function.php'; //includo il file delle funzioni
 $result = recuperaDettagli_stanza($_GET['idStanza']); //richiamo la funzione passandogli l'id della stanza come parametro in get che mi è stato dato dall'href nel file index.php
-include 'layout/header.php'; //includo il file dell'header
+include 'header.php'; //includo il file dell'header
 ?>
 
     <div class="container">

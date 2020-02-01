@@ -23,9 +23,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li class="active"><a href="index.php">Home</a></li> <!-- al click ti riporta alla pagina principale -->
+            <li><a href="dettaglio_prenotazioni.php">Disponibilità stanze</a></li> <!-- al click ti mostra la pagina delle prenotazioni --> 
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

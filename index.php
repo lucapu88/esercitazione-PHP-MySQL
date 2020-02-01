@@ -1,7 +1,7 @@
 <?php
 include 'function.php'; //includo il file delle funzioni
 $result = recuperaStanze(); //richiamo la funzione che mi recupera le stanze
-include 'layout/header.php'; //includo il file dell'header
+include 'header.php'; //includo il file dell'header
 ?>
 
     <div class="container">
@@ -13,7 +13,6 @@ include 'layout/header.php'; //includo il file dell'header
               <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Numero stanza</th>
-                <th scope="col">Piano</th>
                 <th scope="col">Azioni</th>
               </tr>
             </thead>
@@ -25,7 +24,6 @@ include 'layout/header.php'; //includo il file dell'header
                         <tr>
                           <td><?php echo $row['id'] ?></td>
                           <td><?php echo $row['room_number'] ?></td>
-                          <td><?php echo $row['floor'] ?></td>
                           <td>
                             <a class="btn btn-info" href="dettagli_stanza.php?idStanza=<?php echo $row['id'] ?>"> <!-- al click vado a richiamare il file dei dettagli della singola stanza passandogli 'id come parametro in get -->
                               Dettagli
